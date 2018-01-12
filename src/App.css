@@ -1,0 +1,107 @@
+
+.bar {
+  background-color: #F16E10;
+}
+.status {
+  font: 60px "Impact", Futura, sans-serif;
+  margin: 20px;
+  background-image: url('cryptoban.png');
+  border-style: outset;
+  border-width: thick;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 140px;
+  height: 140px;
+  margin-bottom: 10px;
+}
+.numbers {
+  font: 60px "Impact", Futura, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 98px;
+  width: 5%;
+  height: 104px;
+  border-style: outset;
+  float: left;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+
+.square {
+  background: #ffffff;
+  border-style: outset;
+  border-width: medium;
+  float: middle;
+  font-size: 51px;
+  font-weight: bold;
+  line-height: 80px;
+  height: 104px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: left;
+  width: 93%;
+  margin-bottom:10px;
+  margin-right:10px;
+  float: right;
+}
+.square:hover {
+  background-color: #fff7f7;
+}
+.square:focus {
+  outline-color: inherit;
+}
+
+.kbd-navigation .square:focus {
+  background: #ddd;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.Headernum{
+  font: 60px "Impact", Futura, sans-serif;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+  width: 5%;
+  height: 70px;
+  border-style: outset;
+  float: left;
+  font-size: 50px;
+  margin-bottom: 10px;
+  margin-left:10px;
+}
+
+.Headername{
+  font: 60px "Impact", Futura, sans-serif;
+  background: #ffffff;
+  border-style: outset;
+  border-width: medium;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 70px;
+  height: 70px;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: left;
+  width: 93%;
+  margin-bottom:10px;
+  margin-right:10px;
+  float: right;
+}
+.button {
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  background-color: white;
+  color: black;
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: #000000;
+  color: white;
+}
