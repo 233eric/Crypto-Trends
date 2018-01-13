@@ -1,11 +1,10 @@
-
 .bar {
-  background-color: #F16E10;
+  background-color: #f16e10;
 }
 .status {
   font: 60px "Impact", Futura, sans-serif;
   margin: 20px;
-  background-image: url('cryptoban.png');
+  background-image: url("cryptoban.png");
   border-style: outset;
   border-width: thick;
   text-align: center;
@@ -25,7 +24,7 @@
   float: left;
   font-size: 50px;
   margin-bottom: 10px;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
 .square {
@@ -41,8 +40,8 @@
   padding-left: 10px;
   text-align: left;
   width: 93%;
-  margin-bottom:10px;
-  margin-right:10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   float: right;
 }
 .square:hover {
@@ -55,13 +54,13 @@
 .kbd-navigation .square:focus {
   background: #ddd;
 }
-.logo{
+.logo {
   width: 40px;
   height: 40px;
   margin-left: 10px;
   margin-right: 10px;
 }
-.Headernum{
+.Headernum {
   font: 60px "Impact", Futura, sans-serif;
   text-align: center;
   vertical-align: middle;
@@ -72,10 +71,10 @@
   float: left;
   font-size: 50px;
   margin-bottom: 10px;
-  margin-left:10px;
+  margin-left: 10px;
 }
 
-.Headername{
+.Headername {
   font: 60px "Impact", Futura, sans-serif;
   background: #ffffff;
   border-style: outset;
@@ -88,8 +87,8 @@
   padding-left: 10px;
   text-align: left;
   width: 93%;
-  margin-bottom:10px;
-  margin-right:10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
   float: right;
 }
 .button {
