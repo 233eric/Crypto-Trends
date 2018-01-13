@@ -18,37 +18,60 @@ import {
 } from "react-bootstrap";
 import Price from "./api.js";
 
+class Bar extends React.Component {
+  render() {
+    return (
+      <Navbar fixedTop inverse collapseOnSelect>
+        <Navbar.Header>
+          <Navbar.Brand>
+            <a href="#brand">Eric Thai</a>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav>
+            <NavItem eventKey={1} href="https://github.com/233eric">
+              Github
+            </NavItem>
+            <NavItem eventKey={2} href="#">
+              Linkedin
+            </NavItem>
+          </Nav>
+          <Navbar.Form pullRight>
+            <FormGroup>
+              <FormControl type="text" placeholder="Search" />
+            </FormGroup>{" "}
+            <button className="button" type="submit">
+              Submit
+            </button>
+          </Navbar.Form>
+        </Navbar.Collapse>
+      </Navbar>
+    );
+  }
+}
+
+class Page extends React.Component {
+  render() {
+    return (
+      <Pager>
+        <Pager.Item previous href="#">
+          &larr; Previous Page
+        </Pager.Item>
+        <Pager.Item next href="#">
+          Next Page &rarr;
+        </Pager.Item>
+      </Pager>
+    );
+  }
+}
+
 class App extends React.Component {
   render() {
     const status = "CRYPTOCURRENCY SEARCH VOLUME";
     return (
       <div>
-        <Navbar fixedTop inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#brand">Eric Thai</a>
-            </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav>
-              <NavItem eventKey={1} href="https://github.com/233eric">
-                Github
-              </NavItem>
-              <NavItem eventKey={2} href="#">
-                Linkedin
-              </NavItem>
-            </Nav>
-            <Navbar.Form pullRight>
-              <FormGroup>
-                <FormControl type="text" placeholder="Search" />
-              </FormGroup>{" "}
-              <button className="button" type="submit">
-                Submit
-              </button>
-            </Navbar.Form>
-          </Navbar.Collapse>
-        </Navbar>
+        <Bar />
         <div className="status">{status}</div>
         <div className="Headernum"> # </div>
         <div className="Headername"> Name </div>
@@ -193,14 +216,7 @@ class App extends React.Component {
             className="logo"
           />
         </button>
-        <Pager>
-          <Pager.Item previous href="#">
-            &larr; Previous Page
-          </Pager.Item>
-          <Pager.Item next href="#">
-            Next Page &rarr;
-          </Pager.Item>
-        </Pager>
+        <Page />
       </div>
     );
   }
