@@ -83,19 +83,21 @@ th, td {
 /*[ Table style ]*/
 
 .table.style th {
-  font-family: Arial-black;
-  font-size: 20px;
+  font-family: 'Passion One', cursive;
+  font-size: 30px;
   line-height: 1.4;
 }
 
 .table.style td {
-  font-family: Arial-black;
+  font-family: 'Jura', sans-serif;
+  font-weight: bold;
   font-size: 25px;
   line-height: 1.4;
-  color: #364242;
+  color: #000000;
 }
 
 .table.style .table-cols td {
+
   color: #788787;
 }
 

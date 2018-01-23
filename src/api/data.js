@@ -3,6 +3,7 @@ import React, { Component } from "react";
 const rank = rank => `https://api.coinmarketcap.com/v1/ticker/?start=${rank}&limit=1`;
 
 class Price extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -31,7 +32,7 @@ class Price extends Component {
       <td class="column4">
       {this.state.data[0].available_supply}
       </td>
-      <td class="column5">
+      <td class="column5 digit">
         ${this.state.data[0].price_usd}
       </td>
       <td class="column6">

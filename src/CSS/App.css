@@ -2,7 +2,9 @@
   background-color: #f16e10;
 }
 .Title {
-  font: 60px "Impact", Futura, sans-serif;
+  font-family: 'Hammersmith One', sans-serif;
+  text-shadow: 3px 2px grey;
+  font-size: 75px;
   margin-left: 20px;
   margin-right: 20px;
   margin-top: 60px;
