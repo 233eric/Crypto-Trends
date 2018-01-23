@@ -1,0 +1,104 @@
+/*    Table   */
+table {
+  width: 100%;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+
+.table {
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+}
+
+.table th {
+  padding-top: 16px;
+  padding-bottom: 10px;
+}
+
+.table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.column1 {
+  width: 100%;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 225px;
+  padding-left: 55px;
+}
+
+.column3 {
+  width: 280px;
+}
+
+.column4 {
+  width: 250px;
+}
+
+.column5 {
+  width: 170px;
+}
+
+.column6 {
+  width: 170px;
+}
+
+.column7 {
+  width: 330px;
+}
+
+.column8 {
+  width: 305px;
+}
+
+/*[ Fixed column ]*/
+
+.table-firstcol {
+  background-color: #fff;
+  color: #364242;
+  position: absolute;
+  z-index: 1000;
+  width: 310px;
+  top: 0;
+  left: 0;
+}
+
+.wrap-table-cols {
+  width: 100%;
+  overflow: auto;
+  padding-left: 310px;
+  padding-bottom: 28px;
+}
+
+.table-cols table{
+  table-layout: fixed;
+}
+/*[ Table style ]*/
+
+.table.style th {
+  font-family: Arial-black;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.table.style td {
+  font-family: Arial-black;
+  font-size: 25px;
+  line-height: 1.4;
+  color: #364242;
+}
+
+.table.style .table-cols td {
+  color: #788787;
+}
+
+.table.style tr {
+  border-bottom: 1px solid #989997;
+}

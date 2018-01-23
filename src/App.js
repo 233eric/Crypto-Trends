@@ -1,22 +1,21 @@
 import React, { Component } from "react";
-import "./App.css";
-import bitcoin from "./images/bitcoin.png";
-import ethereum from "./images/ethereum.png";
-import ripple from "./images/ripple.png";
-import litecoin from "./images/litecoin.png";
-import bitcoincash from "./images/bitcoincash.png";
+import "./CSS/App.css";
+import "./CSS/table.css";
+import "./images/bitcoin.png";
+import "./images/ethereum.png";
+import "./images/ripple.png";
+import "./images/litecoin.png";
+import "./images/bitcoincash.png";
 import {
   Navbar,
   Nav,
   NavItem,
-  MenuItem,
-  NavDropdown,
   FormControl,
   FormGroup,
-  ControlLabel,
   Pager
 } from "react-bootstrap";
-import Price from "./api.js";
+import Price from "./api/data.js";
+import Name from "./api/name.js";
 
 class Bar extends React.Component {
   render() {
@@ -34,7 +33,7 @@ class Bar extends React.Component {
               Github
             </NavItem>
             <NavItem eventKey={2} href="#">
-              Linkedin
+              LinkedIn
             </NavItem>
           </Nav>
           <Navbar.Form pullRight>
@@ -68,154 +67,63 @@ class Page extends React.Component {
 
 class App extends React.Component {
   render() {
-    const status = "CRYPTOCURRENCY SEARCH VOLUME";
     return (
       <div>
         <Bar />
-        <div className="status">{status}</div>
-        <div className="Headernum"> # </div>
-        <div className="Headername"> Name </div>
-        <div className="numbers">1.</div>
-        <button className="square">
-          <img
-            src={require("./images/bitcoin.png")}
-            alt="logo"
-            className="logo"
-          />
-          Bitcoin
-          <img
-            src={require("./images/bitcoin.png")}
-            alt="logo"
-            className="logo"
-          />
-          <Price coin="bitcoin" />
-        </button>
-        <div className="numbers"> 2. </div>
-        <button className="square">
-          <img
-            src={require("./images/ethereum.png")}
-            alt="logo"
-            className="logo"
-          />
-          Ethereum
-          <img
-            src={require("./images/ethereum.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 3. </div>
-        <button className="square">
-          <img
-            src={require("./images/bitcoincash.png")}
-            alt="logo"
-            className="logo"
-          />
-          Bitcoin Cash
-          <img
-            src={require("./images/bitcoincash.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 4. </div>
-        <button className="square">
-          <img
-            src={require("./images/ripple.png")}
-            alt="logo"
-            className="logo"
-          />
-          Ripple
-          <img
-            src={require("./images/ripple.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 5. </div>
-        <button className="square">
-          <img
-            src={require("./images/litecoin.png")}
-            alt="logo"
-            className="logo"
-          />
-          Litecoin
-          <img
-            src={require("./images/litecoin.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers">6.</div>
-        <button className="square">
-          <img
-            src={require("./images/bitcoin.png")}
-            alt="logo"
-            className="logo"
-          />
-          Bitcoin
-          <img
-            src={require("./images/bitcoin.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 7. </div>
-        <button className="square">
-          <img
-            src={require("./images/ethereum.png")}
-            alt="logo"
-            className="logo"
-          />
-          Ethereum
-          <img
-            src={require("./images/ethereum.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 8. </div>
-        <button className="square">
-          <img
-            src={require("./images/bitcoincash.png")}
-            alt="logo"
-            className="logo"
-          />
-          Bitcoin Cash
-          <img
-            src={require("./images/bitcoincash.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 9. </div>
-        <button className="square">
-          <img
-            src={require("./images/ripple.png")}
-            alt="logo"
-            className="logo"
-          />
-          Ripple
-          <img
-            src={require("./images/ripple.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
-        <div className="numbers"> 10. </div>
-        <button className="square">
-          <img
-            src={require("./images/litecoin.png")}
-            alt="logo"
-            className="logo"
-          />
-          Litecoin
-          <img
-            src={require("./images/litecoin.png")}
-            alt="logo"
-            className="logo"
-          />
-        </button>
+        <div className="Title">Cryptocurrency Trends</div>
+        <div>
+          <div>
+            <div>
+              <div class="table style">
+                <div class="table-firstcol">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th class="column1">Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <Name rank="0"/>
+                      <Name rank="1"/>
+                      <Name rank="2"/>
+                      <Name rank="3"/>
+                      <Name rank="4"/>
+                      <Name rank="5"/>
+                      <Name rank="6"/>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="wrap-table-cols">
+                  <div class="table-cols">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th class="column2">Rank</th>
+                          <th class="column3">Marketcap</th>
+                          <th class="column4">Supply</th>
+                          <th class="column5">USD Price</th>
+                          <th class="column6">Change (24h)</th>
+                          <th class="column7">Search Volume</th>
+                          <th class="column8">Change (24h)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <Price rank="0"/>
+                        <Price rank="1"/>
+                        <Price rank="2"/>
+                        <Price rank="3"/>
+                        <Price rank="4"/>
+                        <Price rank="5"/>
+                        <Price rank="6"/>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <Page />
       </div>
     );
