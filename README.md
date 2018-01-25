@@ -7,10 +7,10 @@ TODO
 
 2. Pull data from google trends to show search volume increase of each coin
 
-3. format Number values
+3. format Number values (DONE)
 
-4. Color Code negative and positive change
+4. Color Code negative and positive change (DONE)
 
 5. Add addition coins
 
-[![https://gyazo.com/6ee678f1c85a529434755c95c42d121d](https://i.gyazo.com/6ee678f1c85a529434755c95c42d121d.gif)](https://gyazo.com/6ee678f1c85a529434755c95c42d121d)
+[![https://gyazo.com/7f98f8fdb84be9d83a5501ef728eb0f4](https://i.gyazo.com/7f98f8fdb84be9d83a5501ef728eb0f4.gif)](https://gyazo.com/7f98f8fdb84be9d83a5501ef728eb0f4)

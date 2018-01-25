@@ -1,11 +1,6 @@
 import React, { Component } from "react";
 import "./CSS/App.css";
 import "./CSS/table.css";
-import "./images/bitcoin.png";
-import "./images/ethereum.png";
-import "./images/ripple.png";
-import "./images/litecoin.png";
-import "./images/bitcoincash.png";
 import {
   Navbar,
   Nav,
