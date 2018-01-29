@@ -59,7 +59,7 @@
   background: #ddd;
 }
 .logo {
-  margin-right: 30px;
+  margin-right: 15px;
   width: 32px;
   height: 32px;
 
@@ -109,4 +109,14 @@
 .button:hover {
   background-color: #000000;
   color: white;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 10px;
+}
+.footer {
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 100%;
 }

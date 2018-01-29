@@ -37,6 +37,28 @@ class Price extends Component {
   }
 
   Info(i) {
+    if (this.state.data[i].price_usd < 0.01) {
+      return (
+        <tr>
+          <td class="column2">{this.state.data[i].rank}</td>
+          <td class="column3">
+            ${(Math.round(this.state.data[i].market_cap_usd * 100) / 100
+            ).toLocaleString(undefined, { minimumFractionDigits: 2 })}
+          </td>
+          <td class="column4">
+            {(Math.round(this.state.data[i].available_supply * 100) / 100
+            ).toLocaleString()}
+          </td>
+          <td class="column5 digit">
+            ${((this.state.data[i].price_usd * 100) / 100
+            ).toLocaleString(undefined, { minimumFractionDigits: 5 })}
+          </td>
+          {this.Color(i)}
+          <td class="column7" />
+          <td class="column8" />
+        </tr>
+      )
+    }
     return (
       <tr>
         <td class="column2">{this.state.data[i].rank}</td>

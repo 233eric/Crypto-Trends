@@ -18,7 +18,7 @@ class Bar extends React.Component {
       <Navbar fixedTop inverse collapseOnSelect>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#brand">Eric Thai</a>
+            <a href="#brand">CryptoTrends</a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
@@ -35,7 +35,7 @@ class Bar extends React.Component {
             <FormGroup>
               <FormControl type="text" placeholder="Search" />
             </FormGroup>{" "}
-            <button className="button" type="submit">
+            <button className="button" onclick="find()">
               Submit
             </button>
           </Navbar.Form>
@@ -55,6 +55,7 @@ class Page extends React.Component {
         <Pager.Item next href="#">
           Next Page &rarr;
         </Pager.Item>
+        <p class="note">Created by: Eric Thai</p>
       </Pager>
     );
   }
@@ -74,7 +75,7 @@ class App extends React.Component {
                   <table>
                     <thead>
                       <tr>
-                        <th class="column1">Name</th>
+                        <th class="column">Name</th>
                       </tr>
                     </thead>
                     <Name rank="0"/>
@@ -103,7 +104,9 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        <footer class="footer">
         <Page />
+        </footer>
       </div>
     );
   }

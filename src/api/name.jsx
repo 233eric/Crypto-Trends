@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 
 const rank = rank =>
@@ -22,13 +21,30 @@ class Name extends Component {
   }
   Id(i) {
     var pic = this.state.data[i].symbol.toLowerCase();
+    if (this.state.data[i].name.length > 15) {
+      return (
+        <tr>
+          <td class="column1">
+            <img
+              src={require("../images/" + pic + ".png")}
+              alt="logo"
+              class="logo"
+            />
+            {this.state.data[i].symbol}
+          </td>
+        </tr>
+      );
+    }
     return (
       <tr>
-        <td class="column1"><img
-            src={require("../images/"+pic+".png")}
+        <td class="column1">
+          <img
+            src={require("../images/" + pic + ".png")}
             alt="logo"
             class="logo"
-          />{this.state.data[i].name}</td>
+          />
+          {this.state.data[i].name}
+        </td>
       </tr>
     );
   }
