@@ -26,9 +26,11 @@ class Bar extends React.Component {
           <Nav>
             <NavItem eventKey={1} href="https://github.com/233eric">
               Github
-            </NavItem>
-            <NavItem eventKey={2} href="#">
-              LinkedIn
+              <img
+                src={require("./images/github.png")}
+                alt="logo"
+                class="github"
+              />
             </NavItem>
           </Nav>
           <Navbar.Form pullRight>
@@ -45,18 +47,17 @@ class Bar extends React.Component {
   }
 }
 
-class Page extends React.Component {
+class Footer extends React.Component {
   render() {
     return (
-      <Pager>
-        <Pager.Item previous href="#">
-          &larr; Previous Page
-        </Pager.Item>
-        <Pager.Item next href="#">
-          Next Page &rarr;
-        </Pager.Item>
-        <p class="note">Created by: Eric Thai</p>
-      </Pager>
+      <div class="card text-center">
+        <div class="card-block">
+          <h4 class="card-title">Created By Eric Thai</h4>
+          <p class="card-text">
+            Data from © 2018 Coinmarketcap
+          </p>
+        </div>
+      </div>
     );
   }
 }
@@ -78,7 +79,7 @@ class App extends React.Component {
                         <th class="column">Name</th>
                       </tr>
                     </thead>
-                    <Name rank="0"/>
+                    <Name rank="0" />
                   </table>
                 </div>
 
@@ -92,11 +93,11 @@ class App extends React.Component {
                           <th class="column4">Supply</th>
                           <th class="column5">USD Price</th>
                           <th class="column6">Change (24h)</th>
-                          <th class="column7">Search Volume</th>
-                          <th class="column8">Change (24h)</th>
+                          <th class="column7">Price BTC</th>
+                          <th class="column8">Search Trends</th>
                         </tr>
                       </thead>
-                      <Price rank="0"/>
+                      <Price rank="0" />
                     </table>
                   </div>
                 </div>
@@ -104,13 +105,10 @@ class App extends React.Component {
             </div>
           </div>
         </div>
-        <footer class="footer">
-        <Page />
-        </footer>
+        <Footer />
       </div>
     );
   }
 }
-
 
 export default App;

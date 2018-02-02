@@ -37,6 +37,7 @@ class Price extends Component {
   }
 
   Info(i) {
+    var name = "https://trends.google.com/trends/explore?q=" + this.state.data[i].name;
     if (this.state.data[i].price_usd < 0.01) {
       return (
         <tr>
@@ -54,8 +55,17 @@ class Price extends Component {
             ).toLocaleString(undefined, { minimumFractionDigits: 5 })}
           </td>
           {this.Color(i)}
-          <td class="column7" />
-          <td class="column8" />
+          <td class="column7">{this.state.data[i].price_btc}</td>
+          <td class="column8">
+          <a href={name}>
+          <img
+            src={require("../images/trends.jpg")}
+            alt="logo"
+            class="trends"
+            href="www.google.com"
+          />
+          </a>
+          </td>
         </tr>
       )
     }
@@ -75,8 +85,17 @@ class Price extends Component {
           ).toLocaleString(undefined, { minimumFractionDigits: 2 })}
         </td>
         {this.Color(i)}
-        <td class="column7" />
-        <td class="column8" />
+        <td class="column7">{this.state.data[i].price_btc}</td>
+        <td class="column8">
+        <a href={name}>
+        <img
+          src={require("../images/trends.jpg")}
+          alt="logo"
+          class="trends"
+          href="www.google.com"
+        />
+        </a>
+        </td>
       </tr>
     );
   }
@@ -137,6 +156,54 @@ class Price extends Component {
         {this.Info(49)}
         {this.Info(50)}
         {this.Info(51)}
+        {this.Info(52)}
+        {this.Info(53)}
+        {this.Info(54)}
+        {this.Info(55)}
+        {this.Info(56)}
+        {this.Info(57)}
+        {this.Info(58)}
+        {this.Info(59)}
+        {this.Info(60)}
+        {this.Info(61)}
+        {this.Info(62)}
+        {this.Info(63)}
+        {this.Info(64)}
+        {this.Info(65)}
+        {this.Info(66)}
+        {this.Info(67)}
+        {this.Info(68)}
+        {this.Info(69)}
+        {this.Info(70)}
+        {this.Info(71)}
+        {this.Info(72)}
+        {this.Info(73)}
+        {this.Info(74)}
+        {this.Info(75)}
+        {this.Info(76)}
+        {this.Info(77)}
+        {this.Info(78)}
+        {this.Info(79)}
+        {this.Info(80)}
+        {this.Info(81)}
+        {this.Info(82)}
+        {this.Info(83)}
+        {this.Info(84)}
+        {this.Info(85)}
+        {this.Info(86)}
+        {this.Info(87)}
+        {this.Info(88)}
+        {this.Info(89)}
+        {this.Info(90)}
+        {this.Info(91)}
+        {this.Info(92)}
+        {this.Info(93)}
+        {this.Info(94)}
+        {this.Info(95)}
+        {this.Info(96)}
+        {this.Info(97)}
+        {this.Info(98)}
+        {this.Info(99)}
       </tbody>
     );
   }
