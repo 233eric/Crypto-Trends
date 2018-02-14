@@ -21,6 +21,7 @@ class Name extends Component {
   }
   Id(i) {
     var pic = this.state.data[i].symbol.toLowerCase();
+    try {
     if (this.state.data[i].name.length > 15) {
       return (
         <tr>
@@ -48,6 +49,35 @@ class Name extends Component {
       </tr>
     );
   }
+  catch(e) {
+    if (this.state.data[i].name.length > 15) {
+      return (
+        <tr>
+          <td class="column1">
+            <img
+              src={require("../images/notfound.png")}
+              alt="logo"
+              class="logo"
+            />
+            {this.state.data[i].symbol}
+          </td>
+        </tr>
+      );
+    }
+    return (
+      <tr>
+        <td class="column1">
+          <img
+            src={require("../images/notfound.png")}
+            alt="logo"
+            class="logo"
+          />
+          {this.state.data[i].name}
+        </td>
+      </tr>
+    );
+  }
+}
   render() {
     if (!this.state.data) return <p>Loading...</p>;
     return (
