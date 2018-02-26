@@ -19,7 +19,7 @@ class Price extends Component {
         });
       });
   }
-
+  /* This function is used to display the percentage change as red if it is negative and green if it is positive */
   Color(i) {
     if (this.state.data[i].percent_change_24h >= 0) {
       return (
@@ -42,6 +42,7 @@ class Price extends Component {
       return (
         <tr>
           <td class="column2">{this.state.data[i].rank}</td>
+          {/* Displays formatted marketcap value with commas and 2 decimals */}
           <td class="column3">
             ${(Math.round(this.state.data[i].market_cap_usd * 100) / 100
             ).toLocaleString(undefined, { minimumFractionDigits: 2 })}
@@ -50,6 +51,7 @@ class Price extends Component {
             {(Math.round(this.state.data[i].available_supply * 100) / 100
             ).toLocaleString()}
           </td>
+          {/* Displays formatted USD price values with commas and 5 decimals */}
           <td class="column5 digit">
             ${((this.state.data[i].price_usd * 100) / 100
             ).toLocaleString(undefined, { minimumFractionDigits: 5 })}
@@ -57,12 +59,12 @@ class Price extends Component {
           {this.Color(i)}
           <td class="column7">{this.state.data[i].price_btc}</td>
           <td class="column8">
+          {/* Links coin to google trends search result */}
           <a href={name}>
           <img
             src={require("../images/trends.jpg")}
             alt="logo"
             class="trends"
-            href="www.google.com"
           />
           </a>
           </td>
@@ -72,6 +74,7 @@ class Price extends Component {
     return (
       <tr>
         <td class="column2">{this.state.data[i].rank}</td>
+        {/* Displays formatted marketcap value with commas and 2 decimals */}
         <td class="column3">
           ${(Math.round(this.state.data[i].market_cap_usd * 100) / 100
           ).toLocaleString(undefined, { minimumFractionDigits: 2 })}
@@ -80,6 +83,7 @@ class Price extends Component {
           {(Math.round(this.state.data[i].available_supply * 100) / 100
           ).toLocaleString()}
         </td>
+        {/* Displays formatted USD price values with commas and 2 decimals */}
         <td class="column5 digit">
           ${(Math.round(this.state.data[i].price_usd * 100) / 100
           ).toLocaleString(undefined, { minimumFractionDigits: 2 })}
@@ -87,19 +91,19 @@ class Price extends Component {
         {this.Color(i)}
         <td class="column7">{this.state.data[i].price_btc}</td>
         <td class="column8">
+        {/* Links coin to google trends search result */}
         <a href={name}>
         <img
           src={require("../images/trends.jpg")}
           alt="logo"
           class="trends"
-          href="www.google.com"
         />
         </a>
         </td>
       </tr>
     );
   }
-
+  /*fills in table for current top 100 crypto currencies*/
   render() {
     if (!this.state.data) return <p>Loading...</p>;
     return (

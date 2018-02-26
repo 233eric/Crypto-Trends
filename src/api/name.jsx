@@ -22,10 +22,12 @@ class Name extends Component {
   Id(i) {
     var pic = this.state.data[i].symbol.toLowerCase();
     try {
+    /* insures that name will fit in column by displaying symbol if name is too long*/
     if (this.state.data[i].name.length > 15) {
       return (
         <tr>
           <td class="column1">
+          {/* Displays image of a cryptocurrency's logo */}
             <img
               src={require("../images/" + pic + ".png")}
               alt="logo"
@@ -39,6 +41,7 @@ class Name extends Component {
     return (
       <tr>
         <td class="column1">
+        {/* Displays image of a cryptocurrency's logo */}
           <img
             src={require("../images/" + pic + ".png")}
             alt="logo"
@@ -49,6 +52,7 @@ class Name extends Component {
       </tr>
     );
   }
+  /* if log image can't be found in /images, retrun a default picture */
   catch(e) {
     if (this.state.data[i].name.length > 15) {
       return (
@@ -78,6 +82,7 @@ class Name extends Component {
     );
   }
 }
+/*fills in first column of table for current top 100 crypto currencies*/
   render() {
     if (!this.state.data) return <p>Loading...</p>;
     return (

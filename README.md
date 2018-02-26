@@ -12,6 +12,6 @@ TODO
 
 5. Add addition coins (DONE)
 
-[![https://gyazo.com/4c63be5c39062c514baeac2f1cc20854](https://i.gyazo.com/4c63be5c39062c514baeac2f1cc20854.gif)](https://gyazo.com/4c63be5c39062c514baeac2f1cc20854)
+6. Upload website to server(AWS)
 
-[![https://gyazo.com/4ffeb7e65cd3127f8d4f2283dcfdc282](https://i.gyazo.com/4ffeb7e65cd3127f8d4f2283dcfdc282.gif)](https://gyazo.com/4ffeb7e65cd3127f8d4f2283dcfdc282)
+[![https://gyazo.com/4ffeb7e65cd3127f8d4f2283dcfdc282](https://i.gyazo.com/4ffeb7e65cd3127f8d4f2283dcfdc282.gif)]

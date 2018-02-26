@@ -11,7 +11,7 @@ import {
 } from "react-bootstrap";
 import Price from "./api/data.jsx";
 import Name from "./api/name.jsx";
-
+/*Adds navbar fixed to the top*/
 class Bar extends React.Component {
   render() {
     return (
@@ -24,6 +24,7 @@ class Bar extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
+           {/*links personal github */}
             <NavItem eventKey={1} href="https://github.com/233eric">
               Github
               <img
@@ -46,7 +47,7 @@ class Bar extends React.Component {
     );
   }
 }
-
+/*Adds footer*/
 class Footer extends React.Component {
   render() {
     return (
@@ -66,7 +67,9 @@ class App extends React.Component {
   render() {
     return (
       <div>
+      {/* Adds the nav bar*/}
         <Bar />
+        {/* Displays the site's title*/}
         <div className="Title">Cryptocurrency Trends</div>
         <div>
           <div>
@@ -75,10 +78,12 @@ class App extends React.Component {
                 <div class="table-firstcol">
                   <table>
                     <thead>
+                    {/*first column of first row*/}
                       <tr>
                         <th class="column">Name</th>
                       </tr>
                     </thead>
+                    {/* Fills in first column*/}
                     <Name rank="0" />
                   </table>
                 </div>
@@ -87,6 +92,7 @@ class App extends React.Component {
                   <div class="table-cols">
                     <table>
                       <thead>
+                        {/* Fills in first row of columns 2-8*/}
                         <tr>
                           <th class="column2">Rank</th>
                           <th class="column3">Marketcap</th>
@@ -97,6 +103,7 @@ class App extends React.Component {
                           <th class="column8">Search Trends</th>
                         </tr>
                       </thead>
+                      {/* fills data from API to table*/}
                       <Price rank="0" />
                     </table>
                   </div>
@@ -105,6 +112,7 @@ class App extends React.Component {
             </div>
           </div>
         </div>
+        {/* Adds the Footer*/}
         <Footer />
       </div>
     );
